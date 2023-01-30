@@ -35,11 +35,10 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: Move files
+        run: mv ./dist _site
       - name: Upload artifact
         uses: actions/upload-artifact@v3.1.2
-        with:
-          name: dist
-          path: dist
 
   # Deployment job
   deploy:
@@ -52,5 +51,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1.2.3
-        with:
-          artifact_name: dist
