@@ -3,9 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f2937" />
+    <meta
+      name="description"
+      content="Welcome to my homepage. Im a full stack software developer from Hamburg, Germany. On this page you will find some information about me and my projects."
+    />
     <title>Luca Helms | qwerty084</title>
   </head>
-  <body>
+  <body class="bg-gray-800 container px-4">
+    <header class="pt-6 text-center text-white">
+      <nav class="mb-8 hidden md:block">
+        <ol role="list" class="flex justify-around max-w-md mx-auto">
+          <li>About me</li>
+          <li>My Projects</li>
+          <li>Contact</li>
+        </ol>
+      </nav>
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+      <div>
+        <nav class="mb-8 md:hidden">
+          <svg
+            id="toggle-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 absolute top-6 right-6 z-10"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </nav>
+      </div>
+      <h1 class="text-3xl mb-4">Hi 👋, I'm Luca</h1>
+      <p>Full Stack developer from Hamburg, Germany.</p>
+      <p class="mb-4">This is my personal website, where i want to showcase some projects of me.</p>
+      <hr />
+    </header>
+    <main>
+      <section aria-labelledby="about">
+        <h2 id="about">About me</h2>
+      </section>
+      <section aria-labelledby="projects">
+        <h2 id="projects">My Projects</h2>
+      </section>
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <div>
+          <p>You can contact me via mail:</p>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
