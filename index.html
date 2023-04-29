@@ -1,69 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1f2937" />
+    <meta name="theme-color" content="#202124" />
     <meta
       name="description"
       content="Welcome to my homepage. Im a full stack software developer from Hamburg, Germany. On this page you will find some information about me and my projects."
     />
-    <title>Luca Helms | qwerty084</title>
+    <link rel="stylesheet" href="./src/assets/style.css" />
+    <title>Luca Hendrik Helms | qwerty084</title>
   </head>
-  <body class="bg-gray-800 container px-4">
-    <header class="pt-6 text-center text-white">
-      <nav class="mb-8 hidden md:block">
-        <ol role="list" class="flex justify-around max-w-md mx-auto">
-          <li>About me</li>
-          <li>My Projects</li>
-          <li>Contact</li>
-        </ol>
+  <body class="dark:bg-[#202124] bg-white container p-6 mx-auto">
+    <header class="text-center pb-5 border-b">
+      <h1 class="mb-4">Luca Hendrik Helms | qwerty084</h1>
+      <nav class="flex gap-4 justify-center">
+        <a href="#about">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <nav id="nav">
-        <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-        </ul>
-      </nav>
-      <div>
-        <nav class="mb-8 md:hidden">
-          <svg
-            id="toggle-menu"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 absolute top-6 right-6 z-10"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </nav>
-      </div>
-      <h1 class="text-3xl mb-4">Hi 👋, I'm Luca</h1>
-      <p>Full Stack developer from Hamburg, Germany.</p>
-      <p class="mb-4">This is my personal website, where i want to showcase some projects of me.</p>
-      <hr />
     </header>
     <main>
-      <section aria-labelledby="about">
-        <h2 id="about">About me</h2>
-      </section>
-      <section aria-labelledby="projects">
-        <h2 id="projects">My Projects</h2>
-      </section>
-      <section aria-labelledby="contact">
-        <h2 id="contact">Contact</h2>
-        <div>
-          <p>You can contact me via mail:</p>
-        </div>
-      </section>
+      <article id="about" class="pt-4">
+        <h2>About me</h2>
+        <p>
+          Im a full stack software developer from Hamburg, Germany. Mostly working on web projects.
+          In my free time, i mostly work on chess related projects, like a
+          <a href="#vue3-chessboard">chessboard library</a> for vue3, a chess engine (WIP) and a
+          desktop application <a href="#tauri">Tauri Chess</a> for playing and analysing chess
+          games.
+        </p>
+      </article>
+      <article id="projects" class="pt-4">
+        <h2>My projects</h2>
+        <section aria-labelledby="vue3-chessboard">
+          <h3 id="vue3-chessboard">vue3-chessboard</h3>
+          <p>vue3-chessboard</p>
+        </section>
+        <section aria-labelledby="tauri">
+          <h3 id="tauri">TauriChess</h3>
+          <p>Tauri Chess - desktop application</p>
+        </section>
+      </article>
+      <article id="contact" class="pt-4">
+        <h2>Contact me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui error voluptatem
+          deserunt facilis quibusdam expedita tempora magni fuga, veniam maxime assumenda ut
+          perspiciatis aliquam aut voluptatum ad exercitationem dolor illum, recusandae beatae
+          aperiam ipsam, eaque natus! Hic animi, esse nihil cumque, asperiores corporis error
+          necessitatibus, ipsum voluptatum libero quis. Amet optio sint iure incidunt laborum
+          delectus consectetur molestias expedita perspiciatis praesentium? Ex, nulla pariatur
+          perspiciatis labore aspernatur, corporis iusto, animi excepturi eveniet deleniti hic
+          recusandae voluptatum unde consequatur. Beatae quia quae iste magni libero alias dicta
+          inventore! Voluptatum a quas in cupiditate quis debitis excepturi officia quam harum
+          exercitationem.
+        </p>
+      </article>
     </main>
-    <script type="module" src="/src/main.ts"></script>
+    <footer>
+      <h3 class="text-center">© 2023 Luca Hendrik Helms</h3>
+      <section>
+        <h4>Privacy</h4>
+        <p>This site does not use cookies or tracking scripts.</p>
+        <p>
+          The website is hosted on GitHub Pages, please refer to their
+          <a
+            href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+            target="_blank"
+            >privacy statement</a
+          >
+          for more information.
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
