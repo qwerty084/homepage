@@ -61,6 +61,10 @@
     @apply mb-6;
   }
 
+  footer {
+    @apply mb-8;
+  }
+
   footer h2 {
     @apply text-2xl;
   }
