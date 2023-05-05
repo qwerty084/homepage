@@ -21,7 +21,7 @@
   }
 
   li {
-    @apply list-disc ml-8 h-10;
+    @apply list-disc ml-8 pb-5;
   }
 
   h1 {
