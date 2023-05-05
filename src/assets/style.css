@@ -5,11 +5,27 @@
 @layer base {
   body {
     font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
-    @apply text-gray-800 dark:text-[#f8f9fa];
+    @apply text-gray-800 dark:text-[#f8f9fa] dark:bg-[#202124] bg-white container p-6 mx-auto;
+  }
+
+  header {
+    @apply text-center pb-5 mb-4 border-b;
+  }
+
+  section {
+    @apply pt-4;
+  }
+
+  nav {
+    @apply flex gap-4 justify-center;
+  }
+
+  li {
+    @apply list-disc ml-8 h-10;
   }
 
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-bold mb-4;
   }
 
   h2 {
@@ -17,7 +33,7 @@
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-xl mb-4;
   }
 
   a {

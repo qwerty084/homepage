@@ -11,57 +11,109 @@
     <link rel="stylesheet" href="./src/assets/style.css" />
     <title>Luca Hendrik Helms | qwerty084</title>
   </head>
-  <body class="dark:bg-[#202124] bg-white container p-6 mx-auto">
-    <header class="text-center pb-5 border-b">
-      <h1 class="mb-4">Luca Hendrik Helms | qwerty084</h1>
-      <nav class="flex gap-4 justify-center">
+  <body>
+    <header>
+      <h1>Luca Hendrik Helms <span class="hidden sm:inline-block">|</span> qwerty084</h1>
+      <nav class="lg:hidden">
         <a href="#about">About me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <article id="about" class="pt-4">
-        <h2>About me</h2>
+      <section aria-labelledby="about">
+        <h2 id="about">About me</h2>
+        <article>
+          <p class="mb-2">
+            Im a full stack software developer from Hamburg, Germany. Mostly working on web
+            projects.
+          </p>
+          <h3>Languages i use</h3>
+          <ul class="mb-4">
+            <li><a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></li>
+            <li>
+              <a href="https://go.dev/" target="_blank">Golang</a>
+            </li>
+            <li>
+              <a href="https://www.rust-lang.org/" target="_blank">Rust</a>
+            </li>
+            <li>
+              <a href="https://www.php.net/" target="_blank">PHP</a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+            </li>
+          </ul>
+          <p>
+            In my free time, i work on chess related projects, like
+            <a href="#vue3-chessboard">vue3-chessboard</a> a chessboard library for vue3, a chess
+            engine (<abbr title="Work in progress">WIP</abbr>) and a desktop application
+            <a href="#tauri">Tauri Chess</a> for playing, learning/improving and analyzing chess
+            games.
+          </p>
+          <p>Im also very interested in creating high performant and accessible web apps.</p>
+        </article>
+      </section>
+      <section aria-labelledby="projects">
+        <h2 id="projects">My projects</h2>
+        <article aria-labelledby="vue3-chessboard">
+          <h3 class="mb-4" id="vue3-chessboard">
+            <a href="https://github.com/qwerty084/vue3-chessboard" target="_blank"
+              >vue3-chessboard</a
+            >
+          </h3>
+          <p>
+            vue3-chessboard is a component library and can be used in any web project, which uses
+            <a href="https://vuejs.org/" target="_blank">vue.js</a>.
+          </p>
+          <p>
+            It includes a chess board, move validation, a lot of customization options and custom
+            events.
+          </p>
+          <p>Its also used in TauriChess, which is my cross-platform chess application.</p>
+        </article>
+        <article aria-labelledby="tauri">
+          <h3 id="tauri">
+            <a href="https://github.com/qwerty084/TauriChess" target="_blank">TauriChess</a>
+          </h3>
+          <p>
+            Tauri Chess (<abbr title="Work in progress">WIP</abbr>) is a cross platform application
+            for playing, learning and improving your chess skills.
+          </p>
+          <p>
+            Written with <a href="https://www.rust-lang.org/" target="_blank">Rust</a>,
+            <a href="https://tauri.app/" target="_blank">Tauri</a> and
+            <a href="href=https://vuejs.org/" target="_blank">vue.js</a> for maximum performance.
+          </p>
+          <p>The features include:</p>
+          <ul>
+            <li>
+              Analyze your games with the strongest chess engines like
+              <a href="https://stockfishchess.org/" target="_blank">stockfish</a> &
+              <a href="https://lczero.org/" target="_blank">Leela Zero</a>
+              on your local device
+            </li>
+            <li>
+              Solve puzzles from <a href="https://lichess.org/" target="_blank">lichess</a> &
+              <a href="https://www.chess.com/" target="_blank">chess.com</a>
+            </li>
+            <li>Play against the computer or your friends</li>
+            <li>Explore and learn chess openings</li>
+          </ul>
+        </article>
+      </section>
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact me</h2>
         <p>
-          Im a full stack software developer from Hamburg, Germany. Mostly working on web projects.
-          In my free time, i mostly work on chess related projects, like a
-          <a href="#vue3-chessboard">chessboard library</a> for vue3, a chess engine (WIP) and a
-          desktop application <a href="#tauri">Tauri Chess</a> for playing and analysing chess
-          games.
+          You can contact via email at
+          <a href="mailto:github@lucahelms.dev">github@lucahelms.dev</a>
+          or visit <a href="https://github.com/qwerty084" target="_blank">my profile on GitHub</a>
         </p>
-      </article>
-      <article id="projects" class="pt-4">
-        <h2>My projects</h2>
-        <section aria-labelledby="vue3-chessboard">
-          <h3 id="vue3-chessboard">vue3-chessboard</h3>
-          <p>vue3-chessboard</p>
-        </section>
-        <section aria-labelledby="tauri">
-          <h3 id="tauri">TauriChess</h3>
-          <p>Tauri Chess - desktop application</p>
-        </section>
-      </article>
-      <article id="contact" class="pt-4">
-        <h2>Contact me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui error voluptatem
-          deserunt facilis quibusdam expedita tempora magni fuga, veniam maxime assumenda ut
-          perspiciatis aliquam aut voluptatum ad exercitationem dolor illum, recusandae beatae
-          aperiam ipsam, eaque natus! Hic animi, esse nihil cumque, asperiores corporis error
-          necessitatibus, ipsum voluptatum libero quis. Amet optio sint iure incidunt laborum
-          delectus consectetur molestias expedita perspiciatis praesentium? Ex, nulla pariatur
-          perspiciatis labore aspernatur, corporis iusto, animi excepturi eveniet deleniti hic
-          recusandae voluptatum unde consequatur. Beatae quia quae iste magni libero alias dicta
-          inventore! Voluptatum a quas in cupiditate quis debitis excepturi officia quam harum
-          exercitationem.
-        </p>
-      </article>
+      </section>
     </main>
     <footer>
-      <h3 class="text-center">© 2023 Luca Hendrik Helms</h3>
-      <section>
-        <h4>Privacy</h4>
+      <section aria-labelledby="privacy">
+        <h3 id="privacy">Privacy</h3>
         <p>This site does not use cookies or tracking scripts.</p>
         <p>
           The website is hosted on GitHub Pages, please refer to their
@@ -72,7 +124,12 @@
           >
           for more information.
         </p>
+        <p>
+          You can find the source code for this website on
+          <a href="https://github.com/qwerty084/homepage" target="_blank">GitHub</a>.
+        </p>
       </section>
+      <h4 class="mt-7 mb-2">© 2023 Luca Hendrik Helms</h4>
     </footer>
   </body>
 </html>
