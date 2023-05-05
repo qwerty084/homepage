@@ -36,6 +36,10 @@
     @apply text-xl mb-4;
   }
 
+  h4 {
+    @apply text-lg mb-3;
+  }
+
   a {
     @apply dark:text-[#9da2ff] underline;
   }
