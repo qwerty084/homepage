@@ -3,21 +3,25 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth motion-reduce:scroll-auto;
+  }
+
   body {
     font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
     @apply text-gray-800 dark:text-[#f8f9fa] dark:bg-[#202124] bg-white container p-6 mx-auto;
   }
 
   header {
-    @apply text-center pb-5 mb-4 border-b;
-  }
-
-  section {
-    @apply pt-4;
+    @apply text-center pb-5 mb-6 border-b;
   }
 
   nav {
-    @apply flex gap-4 justify-center;
+    @apply flex gap-4 justify-center mb-2 lg:hidden;
+  }
+
+  main {
+    @apply mb-2;
   }
 
   li {
@@ -25,19 +29,19 @@
   }
 
   h1 {
-    @apply text-4xl font-bold mb-5;
+    @apply text-4xl font-bold mb-8;
   }
 
   h2 {
-    @apply text-3xl mb-8 font-bold;
+    @apply text-3xl mb-2 font-bold;
   }
 
   h3 {
-    @apply text-xl mb-5;
+    @apply text-xl mb-3 font-bold;
   }
 
   h4 {
-    @apply text-xl mb-4;
+    @apply text-xl mb-4 font-bold;
   }
 
   a {
@@ -50,6 +54,14 @@
   }
 
   article {
-    @apply mb-4;
+    @apply my-5;
+  }
+
+  section {
+    @apply mb-6;
+  }
+
+  footer h2 {
+    @apply text-2xl;
   }
 }
