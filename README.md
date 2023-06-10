@@ -1,2 +1,2 @@
 # homepage
-My homepage (WIP)
+My homepage
