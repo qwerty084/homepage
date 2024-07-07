@@ -23,7 +23,7 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  disableThemeToggle: false
+  disableThemeToggle: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
