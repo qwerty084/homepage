@@ -1,0 +1,64 @@
+baseUrl: "https://lucahelms.dev/"
+languageCode: "en-us"
+title: "qwerty084"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+
+minify:
+  minifyOutput: true
+
+params:
+  env: production
+  title: qwerty084
+  author: Luca Hendrik Helms
+  description: Welcome to my homepage
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  images: []
+  keywords: ["Homepage", "Blog", "Portfolio"]
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableThemeToggle: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: true
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: "Welcome to my homepage (WIP)"
+
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/qwerty084"
+
+  footer:
+    name: "Luca Hendrik Helms"
+
+menu:
+  main:
+    - archive: archive
+      name: Archive
+      url: /archives/
+      weight: 10
+
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
